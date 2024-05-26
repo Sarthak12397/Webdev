@@ -1,0 +1,384 @@
+/* Define CSS variables for both light and dark themes */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: #333;
+    --header-text: #ffffff;
+    --section-bg: #f5f5f5;
+    --section-text: #333;
+    --button-bg: #004080;
+    --button-text: #ffffff;
+    --button-hover-bg: #003366;
+    --game-item-bg: #ffffff;
+    --game-item-text: #333;
+    --footer-bg: rgba(0, 64, 128, 0.7);
+    --footer-text: #ffffff;
+    --modal-bg: rgba(0, 0, 0, 0.7);
+    --modal-content-bg: #ffffff;
+    --modal-content-text: #333;
+    --star-color: orange;
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;
+        --text-color: #f5f5f5;
+        --header-bg: #333;
+        --header-text: #ffffff;
+        --section-bg: #2c2c2c;
+        --section-text: #f5f5f5;
+        --button-bg: #004080;
+        --button-text: #ffffff;
+        --button-hover-bg: #003366;
+        --game-item-bg: #2c2c2c;
+        --game-item-text: #f5f5f5;
+        --footer-bg: rgba(0, 64, 128, 0.7);
+        --footer-text: #ffffff;
+        --modal-bg: rgba(0, 0, 0, 0.7);
+        --modal-content-bg: #333;
+        --modal-content-text: #f5f5f5;
+        --star-color: orange;
+    }
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    overflow: hidden;
+    background-color: var(--header-bg);
+    padding: 20px 10px;
+}
+
+.header a {
+    float: left;
+    color: var(--header-text);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: #575757;
+    color: var(--header-text);
+}
+
+.header-right {
+    float: right;
+}
+
+/* Section styles */
+section {
+    padding: 50px 0;
+    position: relative;
+}
+
+section h1 {
+    font-size: 36px;
+    color: var(--section-text);
+}
+
+section p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.text-container {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 20px;
+    color: var(--section-text);
+}
+
+/* Background image styles */
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: .4 } 
+    to { opacity: 1 }
+}
+
+/* About Us */
+.about-us {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--section-bg);
+    color: var(--section-text);
+}
+
+.about-us img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Trending Games */
+.trending-games {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--section-bg);
+    color: var(--section-text);
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.game-item {
+    background-color: var(--game-item-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: var(--game-item-text);
+}
+
+.game-item:hover {
+    transform: translateY(-10px);
+}
+
+.game-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.game-item h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: var(--game-item-text);
+}
+
+.game-item p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.checked {
+    color: var(--star-color);
+}
+
+/* Contact Us */
+.contact-us {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--section-bg);
+    color: var(--section-text);
+}
+
+.contact-us form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--header-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-us .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--section-text);
+}
+
+.contact-us .form-group input,
+.contact-us .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.contact-us button {
+    padding: 10px 20px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--modal-bg);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: var(--modal-content-bg);
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--modal-content-text);
+}
+
+.modal-content img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.modal-description h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: var(--modal-content-text);
+}
+
+.modal-description p {
+    font-size: 18px;
+    color: var(--modal-content-text);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer styles */
+.footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}

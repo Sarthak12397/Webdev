@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Gamer's Ground</title>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo">Gamer Ground</a>
+        <div class="header-right">
+            <a class="active" href="/">Home</a>
+            <a href="#about">About</a>
+            <a href="#trending-games">Products</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="games.webp" alt="Game 1" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="Game.webp" alt="Game 2" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="xbox-vs-ps4.webp" alt="Game 3" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+
+    <section id="about" class="about-us">
+        <h1>About Us</h1>
+        <p>Gamer's Ground is your trusted source for detailed game reviews and shows which of your favorite PS4 and Xbox games are most trending.</p>
+        <img src="images.jpeg" alt="About Us">
+    </section>
+
+    <section id="trending-games" class="trending-games">
+        <h1>Trending Games</h1>
+        <div class="game-list">
+            <div class="game-item">
+                <img src="images (1).jpeg" alt="Trending Game 1">
+                <h3>Game Title 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius delectus iusto inventore eligendi tempora, explicabo incidunt unde officia! Voluptatum repellendus quidem culpa beatae? </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div class="game-item">
+                <img src="images (2).jpeg" alt="Trending Game 2">
+                <h3>Game Title 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius delectus iusto inventore eligendi tempora, explicabo incidunt unde officia! Voluptatum repellendus quidem culpa beatae? </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <div class="game-item">
+                <img src="header.jpg" alt="Trending Game 3">
+                <h3>Game Title 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius delectus iusto inventore eligendi tempora, explicabo incidunt unde officia! Voluptatum repellendus quidem culpa beatae? </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div class="game-item">
+                <img src="images (4).jpeg" alt="Trending Game 4">
+                <h3>Game Title 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius delectus iusto inventore eligendi tempora, explicabo incidunt unde officia! Voluptatum repellendus quidem culpa beatae? </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <div class="game-item">
+                <img src="call of duty.jpg" alt="Trending Game 5">
+                <h3>Game Title 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius delectus iusto inventore eligendi tempora, explicabo incidunt unde officia! Voluptatum repellendus quidem culpa beatae? </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <div class="game-item">
+                <img src="images (5).jpeg" alt="Trending Game 6">
+                <h3>Game Title 6</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius delectus iusto inventore eligendi tempora, explicabo incidunt unde officia! Voluptatum repellendus quidem culpa beatae? </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        </div>
+    </section>
+   
+    <section id="contact" class="contact-us">
+        <h1>Contact Us</h1>
+        <p>Feel free to reach out to us through our contact form or email us at contact@gamezone.com.</p>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Gamer's Ground. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Game Image">
+            <div class="modal-description">
+                <h2 id="modalTitle">Game Title</h2>
+                <p id="modalDescription">Game Description</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
