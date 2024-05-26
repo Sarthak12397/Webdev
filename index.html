@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" ></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Gamer's Ground</title>
 </head>
@@ -12,132 +12,139 @@
     <div class="header">
         <a href="#" class="logo">Gamer Ground</a>
         <div class="header-right">
-            <a class="active" href="/">Home</a>
+            <a href="/">Home</a>
             <a href="#about">About</a>
             <a href="#trending-games">Products</a>
             <a href="#contact">Contact</a>
         </div>
     </div>
 
-    <div class="container">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="games.webp" alt="Game 1" style="width:100%">
-                <div class="text">Caption Text</div>
+    <!-- Hero Section -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="Game.webp" alt="Fortnite" class="slider-image">
+            <div class="text">
+                <h2>Fortnite</h2>
+                <p>The ultimate battle royale experience!</p>
             </div>
-            
-            <div class="mySlides fade">
-                <img src="Game.webp" alt="Game 2" style="width:100%">
-                <div class="text">Caption Two</div>
-            </div>
-            
-            <div class="mySlides fade">
-                <img src="xbox-vs-ps4.webp" alt="Game 3" style="width:100%">
-                <div class="text">Caption Three</div>
-            </div>
-            
-            <a class="prev">❮</a>
-            <a class="next">❯</a>
         </div>
-        <br>
         
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
+        <div class="mySlides fade">
+            <img src="games.webp" alt="Game 2" class="slider-image">
+            <div class="text">
+                <h2>Game Title 2</h2>
+                <p>Exciting adventures await.</p>
+            </div>
         </div>
+        
+        <div class="mySlides fade">
+            <img src="xbox-vs-ps4.webp" alt="Game 3" class="slider-image">
+            <div class="text">
+                <h2>Game Title 3</h2>
+                <p>Experience the thrill!</p>
+            </div>
+        </div>
+        
+        <a class="prev">❮</a>
+        <a class="next">❯</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
 
+    <!-- About Us Section -->
     <section id="about" class="about-us">
         <h1>About Us</h1>
-        <p>Gamer's Ground is your trusted source for detailed game reviews and it shows which of your favorite PS4 and Xbox games are most trending.</p>
-        <img src="images.jpeg" alt="About Us">
+        <div class="about-content">
+            <div class="about-text">
+                <p>Gamer's Ground is your trusted source for detailed game reviews and the latest trends in the gaming world. Whether you are looking for in-depth reviews, trending games, or the best deals, we have got you covered.</p>
+                <p>Our mission is to provide gamers with comprehensive information and resources to enhance their gaming experience. From console games to PC and mobile gaming, we cover it all.</p>
+            </div>
+            <div class="about-img">
+                <img src="images.jpeg" alt="About Us">
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="images.jpeg" alt="Our Team">
+            </div>
+            <div class="about-text">
+                <p>We are a team of passionate gamers and tech enthusiasts dedicated to bringing you the latest in the gaming industry. Join our community to stay updated on game releases, reviews, and exclusive content.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Trending Games Section -->
     <section id="trending-games" class="trending-games">
         <h1>Trending Games</h1>
         <div class="game-list">
             <div class="game-item">
-                <img src="images (1).jpeg" alt="Trending Game 1">
+                <img src="images (1).jpeg" alt="Game 1">
                 <h3>Game Title 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius delectus iusto inventore eligendi tempora, explicabo incidunt unde officia! Voluptatum repellendus quidem culpa beatae? </p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
+                <p>Genre: Action/Adventure</p>
+                <div class="star-rating">
+                    ★★★★☆
+                </div>
+                <a href="#" class="learn-more">Learn More</a>
             </div>
             <div class="game-item">
-                <img src="images (2).jpeg" alt="Trending Game 2">
+                <img src="images (2).jpeg" alt="Game 2">
                 <h3>Game Title 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius delectus iusto inventore eligendi tempora, explicabo incidunt unde officia! Voluptatum repellendus quidem culpa beatae? </p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+                <p>Genre: Shooter</p>
+                <div class="star-rating">
+                    ★★★★☆
+                </div>
+                <a href="#" class="learn-more">Learn More</a>
             </div>
             <div class="game-item">
-                <img src="header.jpg" alt="Trending Game 3">
+                <img src="images (4).jpeg" alt="Game 3">
                 <h3>Game Title 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius delectus iusto inventore eligendi tempora, explicabo incidunt unde officia! Voluptatum repellendus quidem culpa beatae? </p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
+                <p>Genre: Sports</p>
+                <div class="star-rating">
+                    ★★★★★
+                </div>
+                <a href="#" class="learn-more">Learn More</a>
             </div>
             <div class="game-item">
-                <img src="images (4).jpeg" alt="Trending Game 4">
+                <img src="images (5).jpeg" alt="Game 4">
                 <h3>Game Title 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius delectus iusto inventore eligendi tempora, explicabo incidunt unde officia! Voluptatum repellendus quidem culpa beatae? </p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-            </div>
-            <div class="game-item">
-                <img src="call of duty.jpg" alt="Trending Game 5">
-                <h3>Game Title 5</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius delectus iusto inventore eligendi tempora, explicabo incidunt unde officia! Voluptatum repellendus quidem culpa beatae? </p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-            </div>
-            <div class="game-item">
-                <img src="images (5).jpeg" alt="Trending Game 6">
-                <h3>Game Title 6</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius delectus iusto inventore eligendi tempora, explicabo incidunt unde officia! Voluptatum repellendus quidem culpa beatae? </p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+                <p>Genre: Action</p>
+                <div class="star-rating">
+                    ★★★☆☆
+                </div>
+                
+                <a href="#" class="learn-more">Learn More</a>
             </div>
         </div>
     </section>
    
+    <!-- Contact Us Section -->
     <section id="contact" class="contact-us">
         <h1>Contact Us</h1>
-        <p>Feel free to reach out to us through our contact form or email us at contact@gamezone.com.</p>
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <div class="contact-content">
+            <div class="contact-text">
+                <p>Feel free to reach out to us through our contact form or email us at contact@gamersground.com.</p>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </section>
 
     <footer class="footer">
