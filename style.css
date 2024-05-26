@@ -19,7 +19,6 @@
     --star-color: orange;
 }
 
-/* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-color: #121212;
