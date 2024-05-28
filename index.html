@@ -3,149 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src = "script.js"></script>
     <title>Gamer's Ground</title>
 </head>
 <body>
-    <div class="header">
-        <a href="#" class="logo">Gamer Ground</a>
-        <div class="header-right">
-            <a href="/">Home</a>
-            <a href="#about">About</a>
-            <a href="#trending-games">Products</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
+    <header>
+        <a href = "#" class = "logo"> Gamer's Ground</a>
+        <ul class = "nav">
+            <li><a href = "#">Home</a></li>
+            <li><a href = "#">About Us</a></li>
+            <li><a href = "#">Products</a></li>
 
-    <!-- Hero Section -->
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="Game.webp" alt="Fortnite" class="slider-image">
-            <div class="text">
-                <h2>Fortnite</h2>
-                <p>The ultimate battle royale experience!</p>
-            </div>
-        </div>
-        
-        <div class="mySlides fade">
-            <img src="games.webp" alt="Game 2" class="slider-image">
-            <div class="text">
-                <h2>Game Title 2</h2>
-                <p>Exciting adventures await.</p>
-            </div>
-        </div>
-        
-        <div class="mySlides fade">
-            <img src="xbox-vs-ps4.webp" alt="Game 3" class="slider-image">
-            <div class="text">
-                <h2>Game Title 3</h2>
-                <p>Experience the thrill!</p>
-            </div>
-        </div>
-        
-        <a class="prev">❮</a>
-        <a class="next">❯</a>
-    </div>
-    <br>
+            <li><a href = "#">Contact us</a></li>
+
+        </ul>
+        <div class = "action">
     
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      <div class="toggles" onclick="toggleMenu()"></div>
+
+    </header>
+
+    <div class="banner">
+        <div class="bg">
+            <div class="content">
+                <h2> Gamer's Ground <br>
+                a place for gamers</h2>
+                <p>Lorem ipsum dolor sit amet loream ipsum ipsum dolor sit amet loream ipsum  </p>
+              <a href = "#" class = "btn">Explore more</a>
+            </div>
+            <img src = "images.jpeg">
+        </div>
     </div>
 
-    <!-- About Us Section -->
-    <section id="about" class="about-us">
-        <h1>About Us</h1>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Gamer's Ground is your trusted source for detailed game reviews and the latest trends in the gaming world. Whether you are looking for in-depth reviews, trending games, or the best deals, we have got you covered.</p>
-                <p>Our mission is to provide gamers with comprehensive information and resources to enhance their gaming experience. From console games to PC and mobile gaming, we cover it all.</p>
-            </div>
-            <div class="about-img">
-                <img src="images.jpeg" alt="About Us">
-            </div>
-        </div>
-        <div class="about-content">
-            <div class="about-img">
-                <img src="images.jpeg" alt="Our Team">
-            </div>
-            <div class="about-text">
-                <p>We are a team of passionate gamers and tech enthusiasts dedicated to bringing you the latest in the gaming industry. Join our community to stay updated on game releases, reviews, and exclusive content.</p>
-            </div>
-        </div>
-    </section>
+    <div class="about-us">
+        <div class="contents">
+            <h2> About Us</h2>
+            <p>
+                Architecto sint explicabo modi, doloribus vel itaque corporis adipisci inventore ipsum tempora cumque perspiciatis, distinctio eligendi provident exercitationem. Exercitationem sequi quas vitae?
+                Architecto sint explicabo modi, doloribus vel itaque corporis adipisci inventore ipsum tempora cumque perspiciatis, distinctio eligendi provident exercitationem. Exercitationem sequi quas vitae?                Architecto sint explicabo modi, doloribus vel itaque corporis adipisci inventore ipsum tempora cumque perspiciatis, distinctio eligendi provident exercitationem. Exercitationem sequi quas vitae?
+                Architecto sint explicabo modi, doloribus vel itaque corporis adipisci inventore ipsum tempora cumque perspiciatis, distinctio eligendi provident exercitationem. Exercitationem sequi quas vitae?
 
-    <!-- Trending Games Section -->
-    <section id="trending-games" class="trending-games">
-        <h1>Trending Games</h1>
-        <div class="game-list">
-            <div class="game-item">
-                <img src="images (1).jpeg" alt="Game 1">
-                <h3>Game Title 1</h3>
-                <p>Genre: Action/Adventure</p>
-                <div class="star-rating">
-                    ★★★★☆
-                </div>
-                <a href="#" class="learn-more">Learn More</a>
+            </p>
+            <a href = #> Read More</a>
             </div>
-            <div class="game-item">
-                <img src="images (2).jpeg" alt="Game 2">
-                <h3>Game Title 2</h3>
-                <p>Genre: Shooter</p>
-                <div class="star-rating">
-                    ★★★★☆
+            <img src ="kratos.jpg">
+        </div>
+
+
+    </div>
+
+    <div class="trending-games">
+        <h2>Trending Games</h2>
+        <div class="cards">
+            <div class="card" data-item = "ps4">
+                <img src ="images (2).jpeg">
+                <div class="contenting">
+                    <h4>Game Name</h4>
+                    <div class="info" onclick = "openModal('game1')">
+                        <a href = "#">Learn more</a>
+                    </div>
                 </div>
-                <a href="#" class="learn-more">Learn More</a>
+
             </div>
-            <div class="game-item">
-                <img src="images (4).jpeg" alt="Game 3">
-                <h3>Game Title 3</h3>
-                <p>Genre: Sports</p>
-                <div class="star-rating">
-                    ★★★★★
+
+
+            <div class="card" data-item = "ps4">
+                <img src ="images (1) copy.jpeg">
+                <div class="contenting">
+                    <h4>Game Name</h4>
+                    <div class="info" onclick = "openModal('game2')">
+                        <a href = "#">Learn more</a>
+                    </div>
                 </div>
-                <a href="#" class="learn-more">Learn More</a>
+
             </div>
-            <div class="game-item">
-                <img src="images (5).jpeg" alt="Game 4">
-                <h3>Game Title 4</h3>
-                <p>Genre: Action</p>
-                <div class="star-rating">
-                    ★★★☆☆
+
+
+
+            <div class="card" data-item = "ps4">
+                <img src ="images (4).jpeg">
+                <div class="contenting">
+                    <h4>Game Name</h4>
+                    <div class="info" onclick = "openModal('game3')">
+                        <a href = "#">Learn more</a>
+                    </div>
                 </div>
-                
-                <a href="#" class="learn-more">Learn More</a>
+
+            </div>
+
+
+
+
+            <div class="card" data-item = "ps4">
+                <img src ="images (5).jpeg">
+                <div class="contenting">
+                    <h4>Game Name</h4>
+                    <div class="info" onclick = "openModal('game4')">
+                        <a href = "#">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="card" data-item = "ps4">
+                <img src ="fifa-20---button-2020-1568061446797.jpg">
+                <div class="contenting">
+                    <h4>Game Name</h4>
+                    <div class="info"onclick = "openModal('game5')">
+                        <a href = "#">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card" data-item = "ps4">
+                <img src ="Until_Dawn_cover_art.jpg">
+                <div class="contenting">
+                    <h4>Game Name</h4>
+                    <div class="info" onclick = "openModal('game6')">
+                        <a href = "#">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+            
+        </div>
+    </div>
+
+    <div class="contact">
+        <img src = "70e05d5278f702712eeeaecf5fd91ebd.jpg">
+        <div class="form">
+            <h1> Contact Us</h1>
+
+            <div class="inputbox">
+                <p>Enter Name</p>
+                <input type = "text" placeholder = "Enter Fullname">
+            </div>
+
+            <div class="inputbox">
+                <p>Enter Email</p>
+                <input type = "email" placeholder = "Enter email">
+            </div>
+
+
+            <div class="inputbox">
+                <p>Message </p>
+                <textarea placeholder = "Type here"></textarea>
+            </div>
+
+
+            <div class="inputbox">
+                <input type = "submit" name = "submit">
             </div>
         </div>
-    </section>
-   
-    <!-- Contact Us Section -->
-    <section id="contact" class="contact-us">
-        <h1>Contact Us</h1>
-        <div class="contact-content">
-            <div class="contact-text">
-                <p>Feel free to reach out to us through our contact form or email us at contact@gamersground.com.</p>
-            </div>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
+
+
+
+
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -153,15 +181,130 @@
         </div>
     </footer>
 
-    <div id="gameModal" class="modal">
+
+    <!--
+        Modal Contents
+    -->
+
+    <div id="game1-modal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modalImage" src="" alt="Game Image">
-            <div class="modal-description">
-                <h2 id="modalTitle">Game Title</h2>
-                <p id="modalDescription">Game Description</p>
+            <span class="close" onclick="closeModal('game1')">&times;</span>
+            <h2>Game 1</h2>
+            <div class="modal-images">
+                <img src="images (1).jpeg" alt="Game 2 Image 1">
+                <img src="images (6).jpeg" alt="Game 2 Image 2">
+                <img src="images (3).jpeg" alt="Game 2 Image 3">
+                <img src="images (7).jpeg" alt="Game 2 Image 3">
+
             </div>
+            <br>
+            <p>Game 1 detailed description and review...</p>
         </div>
     </div>
+
+
+    <div id="game2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('game2')">&times;</span>
+            <h2>Game 2</h2>
+            <div class="modal-images">
+                <img src="images (8).jpeg" alt="Game 2 Image 1">
+                <img src="maxresdefault.jpg" alt="Game 2 Image 2">
+                <img src="images (9).jpeg" alt="Game 2 Image 3">
+                <img src="images (10).jpeg" alt="Game 2 Image 4">
+                
+            </div>
+            <br>
+            <p>Game 2 detailed description and review...</p>
+        </div>
+    </div>
+
+
+
+
+    <div id="game3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('game3')">&times;</span>
+            <h2>Game 3</h2>
+            <div class="modal-images">
+                <img src="images (11).jpeg" alt="Game 2 Image 1">
+                <img src="images (12).jpeg" alt="Game 2 Image 2">
+                <img src="images (13).jpeg" alt="Game 2 Image 3">
+                <img src="maxresdefault (1).jpg" alt="Game 2 Image 4">
+               
+            </div>
+            <br>
+            <p>Game 3 detailed description and review...</p>
+        </div>
+    </div>
+
+
+    <div id="game4-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('game4')">&times;</span>
+            <h2>Game 4</h2>
+            <div class="modal-images">
+                <img src="evil.jpg" alt="Game 2 Image 1">
+                <img src="images (14).jpeg" alt="Game 2 Image 2">
+                <img src="images (15).jpeg" alt="Game 2 Image 3">
+                <img src="images (16).jpeg" alt="Game 2 Image 4">
+              
+            </div>
+            <br>
+            <p>Game 4 detailed description and review...</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="game5-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('game5')">&times;</span>
+            <h2>Game 5</h2>
+            <div class="modal-images">
+                <img src="images (17).jpeg" alt="Game 2 Image 1">
+                <img src="maxresdefault (2).jpg" alt="Game 2 Image 2">
+                <img src="images (18).jpeg" alt="Game 2 Image 3">
+                <img src="images (19).jpeg" alt="Game 2 Image 4">
+                
+            </div>
+            <br>
+            <p>Game 5 detailed description and review...</p>
+        </div>
+    </div>
+
+
+
+
+    <div id="game6-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('game6')">&times;</span>
+            <h2>Game 6s</h2>
+            <div class="modal-images">
+                <img src="until.jpg" alt="Game 2 Image 1">
+                <img src="images (20).jpeg" alt="Game 2 Image 2">
+                <img src="images (21).jpeg" alt="Game 2 Image 3">
+                <img src="images (22).jpeg" alt="Game 2 Image 4">
+           
+            </div>
+
+            <br>
+            <p>Game 6 detailed description and review...</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
