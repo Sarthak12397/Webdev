@@ -458,6 +458,9 @@ header .action .searchbx input {
 }
 
 @media (max-width: 991px) {
+    *{
+        overflow-x: hidden;
+    }
     header {
         padding: 15px 40px;
     }
