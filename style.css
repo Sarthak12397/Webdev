@@ -545,8 +545,15 @@ header .action .searchbx input {
 
 
     }
+    .modal-content {
+        width: 90%;
+        padding: 10px;
+    }
 
-
+    .modal-content img {
+        max-width: 100%;
+        height: auto;
+    }
 
     
 }
