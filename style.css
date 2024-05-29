@@ -540,4 +540,9 @@ header .action .searchbx input {
     .contact .form h1 {
         text-align: center;
     }
+
+    .footer{
+        padding: 15px 40px;
+
+    }
 }
