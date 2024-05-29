@@ -520,12 +520,8 @@ header .action .searchbx input {
         width: 100%;
     }
 
-    .trending-games .cards .card {
-        width: 6000px; /* Increase the card width */
-        padding: 5px 10px 0px 10px; /* Increase the padding */
-        margin: 20px 0; /* Adjust the margin */
-        background: #a49ab0;
-        border-radius: 10px;
+    .trending-games {
+        padding: 0px 20px;
     }
     .contact {
         flex-direction: column;
@@ -544,9 +540,13 @@ header .action .searchbx input {
     }
 
     .footer{
-        padding: 15px 40px;
+        padding: 15px;
         width: 500px;
 
 
     }
+
+
+
+    
 }
