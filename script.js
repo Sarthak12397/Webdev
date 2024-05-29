@@ -20,10 +20,12 @@ function closeModal(gameId) {
 }
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("contact").addEventListener("submit", function(event) {
-        event.preventDefault(); 
+        event.preventDefault(); // Prevent the form from submitting
 
+        // Display an alert message
         alert("Thank you for your message! We will get back to you soon.");
 
+        // Reset the form
         event.target.reset();
     });
 });
