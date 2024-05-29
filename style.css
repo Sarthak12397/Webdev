@@ -504,7 +504,7 @@ header .action .searchbx input {
         position: absolute;
     }
     .banner .bg .content {
-        width: 100%;
+        width: 5000px;
         height: 100%;
         background: rgb(164 154 176 / 50%);
         padding: 20px;
@@ -519,8 +519,8 @@ header .action .searchbx input {
     }
 
     .trending-games .cards .card {
-        width: 90%; /* Increase the card width */
-        padding: 20px; /* Increase the padding */
+        width: 6000px; /* Increase the card width */
+        padding: 5px 10px 0px 10px; /* Increase the padding */
         margin: 20px 0; /* Adjust the margin */
         background: #a49ab0;
         border-radius: 10px;
