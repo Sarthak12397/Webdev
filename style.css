@@ -457,6 +457,69 @@ header .action .searchbx input {
     cursor: pointer;
 }
 
+.review-form {
+    margin-top: 20px;
+}
+
+.review-form h3 {
+    color: #f9f8eb;
+}
+
+.review-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #f9f8eb;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ff9f1c;
+    border-radius: 5px;
+    background: #f9f8eb;
+    color: #2e294e;
+}
+
+.review-form button {
+    padding: 10px 20px;
+    background: #ff9f1c;
+    border: none;
+    border-radius: 5px;
+    color: #2e294e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background: #f9f8eb;
+    color: #ff9f1c;
+}
+
+.reviews-section {
+    margin-top: 20px;
+}
+
+.reviews-section h3 {
+    color: #f9f8eb;
+}
+
+.reviews-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.reviews-section ul li {
+    background: #f9f8eb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #2e294e;
+}
+
+
+
 @media (max-width: 991px) {
 
 

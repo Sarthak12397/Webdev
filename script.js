@@ -29,3 +29,25 @@ document.addEventListener("DOMContentLoaded", function() {
         event.target.reset();
     });
 });
+
+
+
+function submitReview(gameId) {
+    const nameInput = document.getElementById(`reviewerName${gameId}`);
+    const reviewInput = document.getElementById(`reviewText${gameId}`);
+    const reviewsList = document.getElementById(`reviewsList${gameId}`);
+
+    const reviewerName = nameInput.value.trim();
+    const reviewText = reviewInput.value.trim();
+
+    if (reviewerName && reviewText) {
+        const reviewItem = document.createElement('li');
+        reviewItem.innerHTML = `<strong>${reviewerName}:</strong> <p>${reviewText}</p>`;
+        reviewsList.appendChild(reviewItem);
+
+        // Clear the form inputs
+        nameInput.value = '';
+        reviewInput.value = '';
+    }
+}
+
