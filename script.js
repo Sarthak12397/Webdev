@@ -31,23 +31,27 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
 function submitReview(gameId) {
     const nameInput = document.getElementById(`reviewerName${gameId}`);
     const reviewInput = document.getElementById(`reviewText${gameId}`);
     const reviewsList = document.getElementById(`reviewsList${gameId}`);
 
-    const reviewerName = nameInput.value.trim();
-    const reviewText = reviewInput.value.trim();
+    const reviewerName = sanitizeInput(nameInput.value.trim());
+    const reviewText = sanitizeInput(reviewInput.value.trim());
 
     if (reviewerName && reviewText) {
         const reviewItem = document.createElement('li');
         reviewItem.innerHTML = `<strong>${reviewerName}:</strong> <p>${reviewText}</p>`;
         reviewsList.appendChild(reviewItem);
 
-        // Clear the form inputs
         nameInput.value = '';
         reviewInput.value = '';
     }
+}
+
+function sanitizeInput(input) {
+    const div = document.createElement('div');
+    div.textContent = input;
+    return div.innerHTML;
 }
 
