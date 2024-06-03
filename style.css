@@ -105,7 +105,7 @@ header ul li a:hover {
 .slider .list .item .content{
     position: absolute;
     left: 10%;
-    top: 20%;
+    top: 40%;
     width: 500px;
     max-width: 80%;
     z-index: 1;
@@ -115,7 +115,7 @@ header ul li a:hover {
     letter-spacing: 10px;
 }
 .slider .list .item .content h2{
-    font-size: 80px;
+    font-size: 100px;
     margin: 0;
 }
 
@@ -123,14 +123,13 @@ header ul li a:hover {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
-    margin-top:30px;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .content .btn:hover {
-    background-color: #ff9f1c;
+    background-color: #0056b3;
 }
 .slider .list .item.active{
     opacity: 1;

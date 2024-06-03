@@ -4,6 +4,30 @@ document.addEventListener("DOMContentLoaded", function() {
     let next = document.getElementById('next');
     let prev = document.getElementById('prev');
     let itemActive = 0;
+    let index = 0;
+
+    
+    function showNextSlide() {
+    items[index].classList.remove('active');
+    index = (index + 1) % items.length;
+    items[index].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+
+    window.onload = function() {
+    setTimeout(() => {
+        document.querySelector('.slider').classList.add('fade-out');
+    }, 5000); // Start fade-out animation after 5 seconds
+    };
+
+    const toggles = document.querySelector('.toggles');
+    const nav = document.querySelector('.nav');
+
+    toggles.addEventListener('click', () => {
+     toggles.classList.toggle('active');
+    nav.classList.toggle('active');
+    });
 
     next.addEventListener('click', function() {
         showSlider((itemActive + 1) % items.length);
@@ -13,12 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         showSlider((itemActive - 1 + items.length) % items.length);
     });
 
-    thumbnails.forEach((thumbnail, index) => {
-        thumbnail.addEventListener('click', function() {
-            showSlider(index);
-        });
-    });
-
+ 
     function showSlider(index) {
         items[itemActive].classList.remove('active');
         thumbnails[itemActive].classList.remove('active');
