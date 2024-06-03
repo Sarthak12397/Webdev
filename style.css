@@ -77,6 +77,8 @@ header ul li a:hover {
     height: 100vh;
     margin-top: -60px;
     position: relative;
+    z-index: 10; /* Adjust z-index */
+
 }
 .slider .list .item{
     position: absolute;
@@ -501,6 +503,43 @@ header ul li a:hover {
     text-align: center;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000; /* Ensure it is above the slider */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Handle overflow */
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.modal-content {
+    background-color: #a49ab0;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    overflow: auto; /* Handle content overflow */
+}
+
+.close {
+    color: #333;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Additional modal-specific styles */
 .modal-images {
     display: flex;
     flex-wrap: wrap;
@@ -521,42 +560,7 @@ header ul li a:hover {
     transform: scale(1.1);
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    font-family: 'Orbitron', sans-serif;
-
-}
-
-.modal-content {
-    background-color: #a49ab0;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-.close {
-    color: #333;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
+/* Review form and reviews section within modal */
 .review-form {
     margin-top: 20px;
 }
@@ -617,7 +621,6 @@ header ul li a:hover {
     margin-bottom: 10px;
     color: #2e294e;
 }
-
 
 
 @media (max-width: 991px) {
