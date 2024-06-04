@@ -126,7 +126,7 @@ header ul li a:hover {
 .content .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    border: 1px solid #ff9f1c;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -391,7 +391,6 @@ header ul li a:hover {
 }
 
 .trending-games .cards .card .info {
-    border-top: 2px solid #ff9f1c;
     padding: 5px;
     display: flex;
     justify-content: space-between;
@@ -625,6 +624,21 @@ header ul li a:hover {
     color: #2e294e;
 }
 
+
+
+.platform-icons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    margin-top: 10px; /* Add spacing between content and icons */
+}
+
+.platform-icons i {
+    font-size: 24px; /* Adjust icon size */
+    margin: 0 10px; /* Adjust spacing between icons */
+    color: #555; /* Icon color */
+}
+
+  
 
 @media (max-width: 991px) {
 
