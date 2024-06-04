@@ -793,7 +793,9 @@ header ul li a:hover {
     .slider .item{
         margin-top:-50px;
     }
-
+    .slider {
+        height: 50vh;
+    }
     
 
     .arrows button {
