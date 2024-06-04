@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
         items[index].classList.add('active');
     }
 
-    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+    setInterval(showNextSlide, 10000); // Change slide every 3 seconds
 
     window.onload = function() {
         setTimeout(() => {
             document.querySelector('.slider').classList.add('fade-out');
-        }, 5000); // Start fade-out animation after 5 seconds
+        }, 10000); // Start fade-out animation after 5 seconds
     };
 
     const toggles = document.querySelector('.toggles');

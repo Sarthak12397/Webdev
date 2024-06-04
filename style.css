@@ -253,7 +253,7 @@ header ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 
@@ -303,7 +303,7 @@ header ul li a:hover {
     align-items: center;
     flex-direction: column;
     margin: 40px auto;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Press Start 2P', sans-serif; /* Trending games section font */
 
 }
 
