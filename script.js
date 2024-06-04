@@ -66,20 +66,18 @@ function closeModal(gameId) {
 }
 
 function submitReview(gameId) {
-    const nameInput = document.getElementById(`reviewerName${gameId}`);
-    const reviewInput = document.getElementById(`reviewText${gameId}`);
+    const reviewForm = document.getElementById(`reviewForm${gameId}`);
+    const reviewerName = sanitizeInput(reviewForm.reviewerName.value);
+    const reviewText = sanitizeInput(reviewForm.reviewText.value);
     const reviewsList = document.getElementById(`reviewsList${gameId}`);
-
-    const reviewerName = sanitizeInput(nameInput.value.trim());
-    const reviewText = sanitizeInput(reviewInput.value.trim());
 
     if (reviewerName && reviewText) {
         const reviewItem = document.createElement('li');
         reviewItem.innerHTML = `<strong>${reviewerName}:</strong> ${reviewText}`;
         reviewsList.appendChild(reviewItem);
 
-        nameInput.value = '';
-        reviewInput.value = '';
+        reviewForm.reviewerName.value = '';
+        reviewForm.reviewText.value = '';
     }
 }
 
