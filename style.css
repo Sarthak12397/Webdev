@@ -784,5 +784,19 @@ header ul li a:hover {
         margin-bottom: 10px;
         color: #2e294e;
     }
+    .slider .item .content {
+        bottom: 10px;
+        left: 10px;
+        font-size: 0.9em;
+    }
 
+    .slider .item{
+        margin-top:-50px;
+    }
+
+    
+
+    .arrows button {
+        padding: 8px;
+    }
 }
