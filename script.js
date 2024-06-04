@@ -55,7 +55,13 @@ document.addEventListener("DOMContentLoaded", function() {
         toggleMenu.classList.toggle('active');
         nav.classList.toggle('active');
     }
-
+    document.getElementById("contact").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+    
+        alert("Thank you for your message! We will get back to you soon.");
+    
+        event.target.reset();
+    });
    
 });
 function openModal(gameId) {
@@ -89,10 +95,3 @@ function sanitizeInput(input) {
     return temp.innerHTML;
 }
 
-document.getElementById("contact").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-
-    alert("Thank you for your message! We will get back to you soon.");
-
-    event.target.reset();
-});
