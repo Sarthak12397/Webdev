@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
 
 * {
     margin: 0;
@@ -17,7 +18,7 @@ body {
 }
 
 header {
-    font-family: 'Audiowide', sans-serif;
+    font-family: 'Bungee', sans-serif;
     position: relative;
     top: 0;
     left: 0;
@@ -112,6 +113,8 @@ header ul li a:hover {
     max-width: 80%;
     z-index: 1;
     color:#FFF;
+    font-family: 'Bungee', sans-serif;
+
     
 }
 .slider .list .item .content p:nth-child(1){
