@@ -802,20 +802,32 @@ header ul li a:hover {
         color: #2e294e;
     }
     .slider .item .content {
-        bottom: 10px;
+       margin-top: 125px;
         left: 10px;
         font-size: 0.9em;
     }
 
+    .slider .list .item .content h2{
+        font-size:20px;
+        bottom:30px;
+    }
+    .slider .list .item .content p{
+        font-size:15px;
+    }
+
     .slider .item{
-        margin-top:-50px;
+        margin-top:-100px;
+
     }
     .slider {
         height: 50vh;
     }
     
 
-    .arrows button {
+    .arrows  {
         padding: 8px;
+        margin-top:-250px
     }
+
+  
 }
